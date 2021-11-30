@@ -37,10 +37,14 @@ int main()
     for(i = 0;i<n;i++){
         count = 0;
         for(j=0;j<n;j++){
-           if(mat[i][j]==mat2[i][j])
-            count++;
-            else
-             count=0;
+           if(mat[i][j]==mat2[i][j]){
+               count++;
+           }
+          else{
+                count=0;
+                break;
+            }
+             
         }
     }
     
