@@ -32,17 +32,22 @@ int main()
        }
     }
     ///checking the circular matrix and entered matrix are same or not
+
     int count;
     for(i = 0;i<n;i++){
         count = 0;
         for(j=0;j<n;j++){
-           if(mat[i][j]==mat2[i][j]);
-           count++;
+           if(mat[i][j]==mat2[i][j])
+            count++;
+            else
+             count=0;
         }
     }
     
+
    if(count==n)
      printf("Yes\n");
    else
     printf("No\n");
 }
+
